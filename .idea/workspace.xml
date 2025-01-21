@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/NetworkSlicingSimulation5g.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cells/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cells/cell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics/qos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices/embb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices/mmtc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slices/urllc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="First projetc commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jvtesteves"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jvtesteves/5GNetworkMobilitySim.git",
+    "accountId": "6b2348d2-bef0-4b79-a331-118252ee7b8f"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -109,12 +100,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737421042436</updated>
-      <workItem from="1737421043454" duration="750000" />
+      <workItem from="1737421043454" duration="1213000" />
     </task>
+    <task id="LOCAL-00001" summary="First projetc commit">
+      <option name="closed" value="true" />
+      <created>1737421894032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737421894032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First projetc commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First projetc commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

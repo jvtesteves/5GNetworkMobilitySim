@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="First projetc commit" />
+    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="ADD README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cells/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/cells/cell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,24 +26,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jvtesteves"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jvtesteves&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jvtesteves/5GNetworkMobilitySim.git",
-    "accountId": "6b2348d2-bef0-4b79-a331-118252ee7b8f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jvtesteves/5GNetworkMobilitySim.git&quot;,
+    &quot;accountId&quot;: &quot;6b2348d2-bef0-4b79-a331-118252ee7b8f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2rutyY0PETD79qJ1cBe6sAm90sx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,6 +57,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,7 +107,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737421042436</updated>
-      <workItem from="1737421043454" duration="1213000" />
+      <workItem from="1737421043454" duration="1951000" />
+      <workItem from="1738236854723" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="First projetc commit">
       <option name="closed" value="true" />
@@ -110,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737421894032</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ADD README.md">
+      <option name="closed" value="true" />
+      <created>1737422399919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737422399919</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First projetc commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First projetc commit" />
+    <MESSAGE value="ADD README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

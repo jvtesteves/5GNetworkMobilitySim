@@ -1,20 +1,31 @@
 import random
 
 def simulate_mobility(users, cells, adjacency_map, time_steps):
-    """
-    Simula a mobilidade dos usuários entre células vizinhas com base no mapa de adjacências.
-    """
     for t in range(time_steps):
         print(f"Time Step {t}")
+
+        # Atualizar o status das células (reativar após falha)
+        for cell in cells:
+            cell.update_status()
+
         for user in users:
             if user.current_cell:
-                # Obter células adjacentes como objetos, não apenas IDs
-                adjacent_cell_ids = adjacency_map.get(user.current_cell.cell_id, [])
-                adjacent_cells = [cell for cell in cells if cell.cell_id in adjacent_cell_ids]
-                if adjacent_cells:
-                    new_cell = random.choice(adjacent_cells)
-                    user.move_to_cell(new_cell)
-            else:
-                # Conectar o usuário a uma célula inicial se ainda não estiver conectado
-                new_cell = random.choice(cells)
+                # Se a célula do usuário estiver desativada, forçar o movimento
+                if not user.current_cell.is_active:
+                    print(f"User {user.user_id} is moving because Cell {user.current_cell.cell_id} is inactive.")
+                    adjacent_cell_ids = adjacency_map.get(user.current_cell.cell_id, [])
+                    adjacent_cells = [cell for cell in cells if cell.cell_id in adjacent_cell_ids and cell.is_active]
+
+                    if adjacent_cells:
+                        new_cell = random.choice(adjacent_cells)
+                        user.move_to_cell(new_cell)
+                    else:
+                        print(f"No active adjacent cells for User {user.user_id}.")
+                continue
+
+            # Mobilidade normal
+            adjacent_cell_ids = adjacency_map.get(user.current_cell.cell_id, [])
+            adjacent_cells = [cell for cell in cells if cell.cell_id in adjacent_cell_ids]
+            if adjacent_cells:
+                new_cell = random.choice(adjacent_cells)
                 user.move_to_cell(new_cell)

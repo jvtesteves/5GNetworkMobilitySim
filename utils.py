@@ -35,6 +35,19 @@ def export_qos_metrics(users, filename="qos_metrics.csv"):
     df.to_csv(filename, index=False)
     print(f"Relatório salvo em {filename}")
 
+def export_failure_periods(cells, filename="cell_failures.csv"):
+    """
+    Exporta os períodos de falha das células para um arquivo CSV.
+    """
+    data = {
+        "Cell ID": [cell.cell_id for cell in cells],
+        "Failure Timer": [cell.failure_timer for cell in cells],
+        "Is Active": [cell.is_active for cell in cells]
+    }
+    df = pd.DataFrame(data)
+    df.to_csv(filename, index=False)
+    print(f"Períodos de falha das células salvos em {filename}")
+
 def compare_qos_metrics(fixed_file, mobile_file):
     """
     Compara as métricas de QoS entre os cenários fixo e móvel.
@@ -52,11 +65,6 @@ def compare_qos_metrics(fixed_file, mobile_file):
         plt.ylabel(metric)
         plt.legend()
         plt.show()
-
-
-import pandas as pd
-from metrics.qos import QoS
-import matplotlib.pyplot as plt
 
 def analyze_overload(users, filename="qos_overload_analysis.csv"):
     """
@@ -105,3 +113,18 @@ def plot_overload(users):
     plt.xlabel("Usuários")
     plt.ylabel("Jitter (ms)")
     plt.show()
+
+def plot_failure_impact(cells, metrics_file):
+    """
+    Gera gráficos para mostrar como as falhas temporárias das células afetaram as métricas de QoS.
+    """
+    data = pd.read_csv(metrics_file)
+    for metric in ["Latency (ms)", "Throughput (Mbps)", "Jitter (ms)"]:
+        plt.figure()
+        plt.plot(data["User"], data[metric], marker='o', linestyle='-', color='green', label=metric)
+        plt.title(f"Impacto das Falhas nas Células: {metric}")
+        plt.xlabel("Usuários")
+        plt.ylabel(metric)
+        plt.legend()
+        plt.show()
+

@@ -1,3 +1,4 @@
+#URLLC
 class URLLC:
     def __init__(self, bandwidth, latency):
         self.bandwidth = bandwidth

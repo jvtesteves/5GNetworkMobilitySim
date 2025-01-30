@@ -1,3 +1,4 @@
+#User
 class User:
     def __init__(self, user_id, slice_type):
         self.user_id = user_id

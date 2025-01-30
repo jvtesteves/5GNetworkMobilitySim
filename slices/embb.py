@@ -1,3 +1,4 @@
+#eMBB
 class eMBB:
     def __init__(self, bandwidth, latency):
         self.bandwidth = bandwidth

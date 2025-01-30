@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="ADD README.md">
+    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="Cell failure and metrics export">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cells/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/cells/cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics/qos.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics/qos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slices/embb.py" beforeDir="false" afterPath="$PROJECT_DIR$/slices/embb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slices/mmtc.py" beforeDir="false" afterPath="$PROJECT_DIR$/slices/mmtc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slices/urllc.py" beforeDir="false" afterPath="$PROJECT_DIR$/slices/urllc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737421042436</updated>
       <workItem from="1737421043454" duration="1951000" />
-      <workItem from="1738236854723" duration="1813000" />
+      <workItem from="1738236854723" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="First projetc commit">
       <option name="closed" value="true" />
@@ -126,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737422399919</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cell failure and metrics export">
+      <option name="closed" value="true" />
+      <created>1738239024516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738239024516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,17 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First projetc commit" />
     <MESSAGE value="ADD README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD README.md" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Cell failure and metrics export" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cell failure and metrics export" />
   </component>
 </project>

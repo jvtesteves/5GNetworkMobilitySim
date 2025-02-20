@@ -2,12 +2,12 @@ import random
 
 class QoS:
     @staticmethod
-    def calculate_latency(slice_type, penalty=0, interference=0):
+    def calculate_latency(slice_type, penalty=0, interference=0, handover_penalty=0):
         """
-        Calcula a latência considerando o tipo de slice, penalidades e interferência.
+        Calcula a latência considerando o tipo de slice, penalidades, interferência e penalidade de handover.
         """
         base_latency = random.uniform(1, 50) if slice_type == "eMBB" else random.uniform(0.1, 10)
-        return base_latency + penalty + (0.5 * interference)  # Interferência adiciona 0.5 ms por unidade
+        return base_latency + penalty + (0.5 * interference) + handover_penalty  # Handover adiciona latência temporária
 
     @staticmethod
     def calculate_throughput(slice_type, interference=0):
@@ -26,12 +26,12 @@ class QoS:
         return max(throughput, 1)
 
     @staticmethod
-    def calculate_jitter(slice_type, penalty=0, interference=0):
+    def calculate_jitter(slice_type, penalty=0, interference=0, handover_penalty=0):
         """
-        Calcula o jitter considerando o tipo de slice, penalidades e interferência.
+        Calcula o jitter considerando o tipo de slice, penalidades, interferência e penalidade de handover.
         """
         base_jitter = random.uniform(0.01, 5) if slice_type == "URLLC" else random.uniform(5, 20)
-        return base_jitter + penalty + (0.3 * interference)  # Interferência adiciona 0.3 ms por unidade
+        return base_jitter + penalty + (0.3 * interference) + handover_penalty
 
     @staticmethod
     def calculate_packet_loss(slice_type, interference=0):
@@ -41,4 +41,11 @@ class QoS:
         base_loss = random.uniform(0, 1) if slice_type == "mMTC" else random.uniform(0, 0.1)
         # A interferência aumenta a perda de pacotes em 0.05% por unidade, até um máximo de 5%
         return min(base_loss + (0.0005 * interference), 0.05)
+
+    @staticmethod
+    def apply_handover_penalty(slice_type):
+        """
+        Aplica uma penalidade de handover adicional para o slice URLLC, devido à sensibilidade à latência.
+        """
+        return 5 if slice_type == "URLLC" else 2  # Penalidade maior para URLLC
 

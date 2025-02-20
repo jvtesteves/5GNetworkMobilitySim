@@ -5,6 +5,7 @@ class Cell:
         self.connected_users = []
         self.is_active = True  # Indica se a célula está ativa
         self.failure_timer = 0  # Temporizador para falha temporária
+        self.interference_level = 0  # Nível de interferência causado pelas células vizinhas
 
     def connect_user(self, user):
         if not self.is_active:
@@ -41,3 +42,12 @@ class Cell:
                 self.failure_timer -= 1
             if self.failure_timer == 0:
                 self.activate()
+
+    def calculate_interference(self, adjacent_cells):
+        """
+        Calcula o nível de interferência com base no número de usuários nas células vizinhas.
+        Quanto mais usuários nas células vizinhas, maior a interferência.
+        """
+        self.interference_level = sum(len(cell.connected_users) for cell in adjacent_cells if cell.is_active)
+        print(f"Cell {self.cell_id} has interference level: {self.interference_level}")
+

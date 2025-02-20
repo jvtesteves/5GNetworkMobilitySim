@@ -25,6 +25,15 @@ def trigger_cell_failures(cells, probability=0.2, duration=3):
         if random.random() < probability and cell.is_active:  # Verifica se a célula deve ser desativada
             cell.deactivate(duration)  # Desativa a célula por um número de time steps especificado
 
+def calculate_interference_for_all_cells(cells, adjacency_map):
+    """
+    Calcula a interferência para todas as células com base no número de usuários nas células vizinhas.
+    """
+    for cell in cells:
+        adjacent_cell_ids = adjacency_map.get(cell.cell_id, [])
+        adjacent_cells = [adj_cell for adj_cell in cells if adj_cell.cell_id in adjacent_cell_ids]
+        cell.calculate_interference(adjacent_cells)
+
 def main():
     # Criar células com capacidade limitada e estado inicial ativo
     cells = [Cell(cell_id=i, capacity=5) for i in range(5)]
@@ -54,18 +63,19 @@ def main():
     print("\nMétricas de QoS na Simulação Fixa:")
     export_qos_metrics(users, filename="qos_metrics_fixa.csv")
 
-    # Simulação do cenário com mobilidade e falhas temporárias nas células
-    print("\nSimulação com Mobilidade e Falhas Temporárias:")
+    # Simulação do cenário com mobilidade, falhas temporárias e interferência
+    print("\nSimulação com Mobilidade, Falhas Temporárias e Interferência:")
     for t in range(10):  # Simula 10 time steps com mobilidade
         trigger_cell_failures(cells)  # Deativa aleatoriamente células a cada time step
+        calculate_interference_for_all_cells(cells, adjacency_map)  # Calcula interferência antes da mobilidade
         simulate_mobility(users, cells, adjacency_map, time_steps=1)  # Executa a mobilidade por 1 time step
 
-    # Coletar e exportar métricas do cenário com mobilidade e falhas
-    print("\nMétricas de QoS na Simulação com Mobilidade e Falhas Temporárias:")
-    export_qos_metrics(users, filename="qos_metrics_mobilidade_falhas.csv")
+    # Coletar e exportar métricas do cenário com mobilidade, falhas e interferência
+    print("\nMétricas de QoS na Simulação com Mobilidade, Falhas Temporárias e Interferência:")
+    export_qos_metrics(users, filename="qos_metrics_mobilidade_interferencia.csv")
 
     # Comparar as métricas entre os dois cenários
-    compare_qos_metrics("qos_metrics_fixa.csv", "qos_metrics_mobilidade_falhas.csv")
+    compare_qos_metrics("qos_metrics_fixa.csv", "qos_metrics_mobilidade_interferencia.csv")
 
     # Analisar o impacto da sobrecarga e exportar os resultados
     analyze_overload(users, filename="qos_overload_analysis.csv")

@@ -1,6 +1,6 @@
 # Network Slicing Simulation
 
-Este projeto implementa uma simulação de **Network Slicing** em redes 5G, focando em mobilidade, análise de métricas de QoS (latência, jitter, throughput e perda de pacotes), impacto da sobrecarga, falhas temporárias nas células e interferência entre células vizinhas.
+Este projeto implementa uma simulação de **Network Slicing** em redes 5G, focando em mobilidade, análise de métricas de QoS (latência, jitter, throughput e perda de pacotes), impacto da sobrecarga, falhas temporárias nas células, interferência entre células vizinhas e handover otimizado.
 
 ---
 
@@ -16,8 +16,9 @@ O projeto utiliza classes específicas para diferentes **slices de rede**:
 2. Aplicação de penalidades em métricas de QoS em caso de sobrecarga nas células.
 3. Introdução de falhas temporárias nas células, forçando a movimentação dos usuários.
 4. Simulação da interferência entre células vizinhas, impactando jitter, throughput e perda de pacotes.
-5. Geração de relatórios detalhados em formato CSV.
-6. Visualização gráfica de métricas, comparação entre cenários e impacto das falhas e interferência.
+5. Implementação de handover otimizado, com critérios baseados em sinal e restrições para URLLC.
+6. Geração de relatórios detalhados em formato CSV.
+7. Visualização gráfica de métricas, comparação entre cenários e impacto das falhas, interferência e handover.
 
 ---
 
@@ -26,15 +27,15 @@ O projeto utiliza classes específicas para diferentes **slices de rede**:
 ```plaintext
 NetworkSlicingSimulation/
 ├── cells/
-│   ├── cell.py       # Gerencia as células, falhas temporárias, interferência e capacidade
+│   ├── cell.py       # Gerencia as células, falhas temporárias, interferência, capacidade e sinal
 ├── users/
-│   ├── user.py       # Representa os usuários e suas conexões às células
+│   ├── user.py       # Representa os usuários, controla handovers e restrições
 ├── slices/
 │   ├── embb.py       # Classe para slice eMBB
 │   ├── urllc.py      # Classe para slice URLLC
 │   ├── mmtc.py       # Classe para slice mMTC
 ├── metrics/
-│   ├── qos.py        # Calcula métricas de QoS considerando interferência
+│   ├── qos.py        # Calcula métricas de QoS considerando interferência e handover
 ├── mobility.py        # Gerencia a mobilidade dos usuários entre células
 ├── utils.py           # Funções para exportação, análise, falhas e visualização de dados
 ├── simulation.py      # Script principal para execução das simulações
@@ -70,7 +71,7 @@ NetworkSlicingSimulation/
 ### **Relatórios CSV**
 Os relatórios são gerados automaticamente após a execução:
 - `qos_metrics_fixa.csv`: Métricas do cenário fixo.
-- `qos_metrics_mobilidade_interferencia.csv`: Métricas do cenário com mobilidade, falhas temporárias e interferência.
+- `qos_metrics_mobilidade_handover.csv`: Métricas do cenário com mobilidade, falhas temporárias, interferência e handover otimizado.
 - `qos_overload_analysis.csv`: Impacto da sobrecarga nas métricas.
 - `cell_failures.csv`: Relatório dos períodos de falha das células.
 
@@ -78,16 +79,16 @@ Os relatórios são gerados automaticamente após a execução:
 Os gráficos incluem:
 - Comparação de **latência**, **throughput**, **jitter** e **perda de pacotes** entre os cenários.
 - Impacto da sobrecarga nas métricas.
-- Visualização do impacto das falhas temporárias e interferência nas métricas de QoS.
+- Visualização do impacto das falhas temporárias, interferência e handover nas métricas de QoS.
 
 ---
 
 ## 🔧 **Configurações Adicionais**
-- **Células**: Modifique a capacidade e o nível de interferência no arquivo `cell.py`.
-- **Usuários**: Ajuste o número de usuários no script `simulation.py`.
-- **Mapa de Adjacência**: Edite a variável `adjacency_map` no `simulation.py`.
+- **Células**: Modifique a capacidade, nível de interferência e intensidade do sinal em `cell.py`.
+- **Usuários**: Ajuste o número de usuários e os parâmetros de handover em `user.py`.
+- **Mapa de Adjacência**: Edite a variável `adjacency_map` em `simulation.py`.
 - **Duração das falhas**: Modifique a duração no método `deactivate` em `cell.py`.
-- **Parâmetros de Interferência**: Ajuste o cálculo no arquivo `qos.py`.
+- **Parâmetros de Interferência e Handover**: Ajuste o cálculo no arquivo `qos.py`.
 
 ---
 

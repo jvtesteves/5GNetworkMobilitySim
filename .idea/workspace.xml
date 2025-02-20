@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="README Update">
+    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="Add cell interference">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cells/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/cells/cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics/qos.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics/qos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qos_metrics_fixa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_metrics_fixa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qos_metrics_mobilidade_falhas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_metrics_mobilidade_falhas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qos_overload_analysis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_overload_analysis.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +107,7 @@
       <workItem from="1737421043454" duration="1951000" />
       <workItem from="1738236854723" duration="3918000" />
       <workItem from="1738781638234" duration="292000" />
-      <workItem from="1740049177846" duration="1571000" />
+      <workItem from="1740049177846" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="First projetc commit">
       <option name="closed" value="true" />
@@ -155,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738239575090</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add cell interference">
+      <option name="closed" value="true" />
+      <created>1740050820789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740050820789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +169,7 @@
     <MESSAGE value="Cell failure and metrics export" />
     <MESSAGE value="Small Updates" />
     <MESSAGE value="README Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="README Update" />
+    <MESSAGE value="Add cell interference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add cell interference" />
   </component>
 </project>

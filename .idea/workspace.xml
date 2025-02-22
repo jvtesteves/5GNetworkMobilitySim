@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="Handover optimization" />
+    <list default="true" id="7783dfb9-0119-4fd5-aa1e-8737888e58aa" name="Changes" comment="README Update">
+      <change afterPath="$PROJECT_DIR$/log_terminal_simulacao.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qos_metrics_fixa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_metrics_fixa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qos_metrics_mobilidade_handover.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_metrics_mobilidade_handover.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qos_overload_analysis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/qos_overload_analysis.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +110,8 @@
       <workItem from="1737421043454" duration="1951000" />
       <workItem from="1738236854723" duration="3918000" />
       <workItem from="1738781638234" duration="292000" />
-      <workItem from="1740049177846" duration="3873000" />
+      <workItem from="1740049177846" duration="4961000" />
+      <workItem from="1740229469629" duration="2169000" />
     </task>
     <task id="LOCAL-00001" summary="First projetc commit">
       <option name="closed" value="true" />
@@ -170,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740053775228</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="README Update">
+      <option name="closed" value="true" />
+      <created>1740053920808</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740053920808</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,8 +197,8 @@
     <MESSAGE value="Cell failure and metrics export" />
     <MESSAGE value="Small Updates" />
     <MESSAGE value="Add cell interference" />
-    <MESSAGE value="README Update" />
     <MESSAGE value="Handover optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handover optimization" />
+    <MESSAGE value="README Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="README Update" />
   </component>
 </project>

@@ -1,0 +1,154 @@
+Simulação Fixa:
+User 1 connected to Cell 0
+User 1 moved to Cell 0 (Handover #1)
+User 2 connected to Cell 0
+User 2 moved to Cell 0 (Handover #1)
+User 3 connected to Cell 0
+User 3 moved to Cell 0 (Handover #1)
+User 4 connected to Cell 0
+User 4 moved to Cell 0 (Handover #1)
+User 5 connected to Cell 0
+User 5 moved to Cell 0 (Handover #1)
+Cell 0 is overloaded! Applying penalties: Latency +20 ms, Jitter +5 ms
+User 6 moved to Cell 0 (Handover #1)
+Cell 0 is overloaded! Applying penalties: Latency +20 ms, Jitter +5 ms
+User 7 moved to Cell 0 (Handover #1)
+Cell 0 is overloaded! Applying penalties: Latency +20 ms, Jitter +5 ms
+User 8 moved to Cell 0 (Handover #1)
+Cell 0 is overloaded! Applying penalties: Latency +20 ms, Jitter +5 ms
+User 9 moved to Cell 0 (Handover #1)
+Cell 0 is overloaded! Applying penalties: Latency +20 ms, Jitter +5 ms
+User 10 moved to Cell 0 (Handover #1)
+
+Métricas de QoS na Simulação Fixa:
+Relatório salvo em qos_metrics_fixa.csv
+
+Simulação com Mobilidade, Falhas Temporárias, Interferência e Handover Otimizado:
+Cell 3 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 2 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 3 is now active.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 1 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 2 is now active.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 2 has been deactivated for 3 time steps.
+Cell 4 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 1 is now active.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 3 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 2 is now active.
+Cell 4 is now active.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 1 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Cell 2 has been deactivated for 3 time steps.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+Time Step 0
+Cell 3 is now active.
+Cell 0 has interference level: 0, Signal strength: 100
+Cell 1 has interference level: 5, Signal strength: 75
+Cell 2 has interference level: 5, Signal strength: 75
+Cell 3 has interference level: 0, Signal strength: 100
+Cell 4 has interference level: 0, Signal strength: 100
+
+Métricas de QoS na Simulação com Mobilidade, Falhas Temporárias, Interferência e Handover Otimizado:
+Relatório salvo em qos_metrics_mobilidade_handover.csv
+Análise de sobrecarga salva em qos_overload_analysis.csv
